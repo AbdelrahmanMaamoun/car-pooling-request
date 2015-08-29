@@ -1,0 +1,33 @@
+<h1>Listing cerpoolingrequests</h1>
+
+<table>
+  <tr>
+    <th>Email</th>
+    <th>Password</th>
+    <th>User</th>
+    <th>Travel</th>
+    <th>Prefer from</th>
+    <th>Prefer to</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cerpoolingrequests.each do |cerpoolingrequest| %>
+  <tr>
+    <td><%= cerpoolingrequest.email %></td>
+    <td><%= cerpoolingrequest.password %></td>
+    <td><%= cerpoolingrequest.user_id %></td>
+    <td><%= cerpoolingrequest.travel_id %></td>
+    <td><%= cerpoolingrequest.prefer_from %></td>
+    <td><%= cerpoolingrequest.prefer_to %></td>
+    <td><%= link_to 'Show', cerpoolingrequest %></td>
+    <td><%= link_to 'Edit', edit_cerpoolingrequest_path(cerpoolingrequest) %></td>
+    <td><%= link_to 'Destroy', cerpoolingrequest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cerpoolingrequest', new_cerpoolingrequest_path %>

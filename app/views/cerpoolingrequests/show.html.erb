@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Email:</b>
+  <%= @cerpoolingrequest.email %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @cerpoolingrequest.password %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @cerpoolingrequest.user_id %>
+</p>
+
+<p>
+  <b>Travel:</b>
+  <%= @cerpoolingrequest.travel_id %>
+</p>
+
+<p>
+  <b>Prefer from:</b>
+  <%= @cerpoolingrequest.prefer_from %>
+</p>
+
+<p>
+  <b>Prefer to:</b>
+  <%= @cerpoolingrequest.prefer_to %>
+</p>
+
+
+<%= link_to 'Edit', edit_cerpoolingrequest_path(@cerpoolingrequest) %> |
+<%= link_to 'Back', cerpoolingrequests_path %>
